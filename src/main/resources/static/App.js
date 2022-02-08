@@ -125,11 +125,13 @@ export default function App() {
                             <${Home} path="/" />
                         ` : html`
                             <div path="/">
+                                <img src="images/divisi-pendidikan-logo-128px.svg" height="256"/>
                                 <h1>Selamat datang di sistem informasi Divisi Pendidikan PUB</h1>
                                 <h3>Anda harus login terlebih dahulu untuk mengakses informasi atau mengelola data.</h3>
                                 <${Link}
                                         className="button button-outlined"
                                         href="/login"
+                                        style=${{alignSelf: "center", width: 128}}
                                 >Login<//>
                             </div>
                         `}
